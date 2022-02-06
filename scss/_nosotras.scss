@@ -1,0 +1,32 @@
+.nosotras{
+    & h1{
+        text-align: center;
+        font-weight: bold;
+        background-color:rgb(159, 252, 255);
+        color: grey;
+    }
+    & .divNosotras{
+        display: grid;
+        grid-template-areas: 
+        "img texto1"
+        "img texto2";
+        grid-template-columns: 1fr 7fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        & img{
+            grid-area: img;
+            width: 300px;
+            padding-left: 10px;
+            align-self: center;
+        }
+        & .texto1{
+            grid-area: texto1;
+            margin-top: 30px;
+        }
+        & .texto2{
+            grid-area: texto2;
+        }
+    }
+}

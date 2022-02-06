@@ -1,0 +1,58 @@
+.preguntasFrecuentes{
+    margin-top: 10px;
+    & h1{
+        background-color:rgb(159, 252, 255);
+        color: grey;
+        text-align: center;
+        font-weight: bold;
+    }
+    & .infoPreguntas{
+        & p{
+            text-align: center;
+            background-color: grey;
+            color:rgb(159, 252, 255);
+            font-weight: bold;
+        }
+        & .comprar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            & ol{
+                text-align: justify;
+                margin-top: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                list-style-type: decimal;
+            }
+        }
+        & .mediosDePago{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+        }
+        & .cambios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            & ul{
+                text-align: justify;
+                margin-top: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                list-style-type: disc;
+            }
+        }
+    }
+}
+
+@mixin medios($width, $height) {
+    height: $height;
+    width: $width;
+}
+.pago {
+    @include medios(65px, 70px);
+}
